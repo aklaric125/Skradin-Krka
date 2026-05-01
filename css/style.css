@@ -1,0 +1,336 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2c5f2d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+nav a.active {
+    background-color: #4a7c4a;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    background-color: #e8f5e8;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.atrakcija, .info, .kontakt {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2c5f2d;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a7c4a;
+}
+
+footer {
+    background-color: #2c5f2d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}:root {
+    --boja-primarna: #2c7a4b;
+    --boja-sekundarna: #1a4f30;
+    --boja-pozadina: #f5f5f5;
+    --boja-tekst: #333333;
+    --razmak-mali: 8px;
+    --razmak-srednji: 16px;
+    --razmak-veliki: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--boja-pozadina);
+    color: var(--boja-tekst);
+}
+
+header {
+    background-color: var(--boja-primarna);
+    color: white;
+    padding: var(--razmak-srednji) var(--razmak-veliki);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--razmak-srednji);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: var(--razmak-mali);
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--boja-sekundarna);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--razmak-veliki);
+}
+
+.hero {
+    background-color: var(--boja-primarna);
+    color: white;
+    padding: var(--razmak-veliki);
+    border-radius: 8px;
+    margin-bottom: var(--razmak-veliki);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: var(--razmak-srednji);
+}
+
+.uvod {
+    background-color: white;
+    padding: var(--razmak-veliki);
+    border-radius: 8px;
+}
+
+.uvod h2 {
+    margin-bottom: var(--razmak-srednji);
+    color: var(--boja-primarna);
+}
+
+footer {
+    background-color: var(--boja-sekundarna);
+    color: white;
+    text-align: center;
+    padding: var(--razmak-srednji);
+    margin-top: var(--razmak-veliki);
+}
+h2 {
+    color: var(--boja-primarna);
+    margin-bottom: var(--razmak-veliki);
+    margin-top: var(--razmak-veliki);
+}
+
+.filter-gumbi {
+    display: flex;
+    gap: var(--razmak-mali);
+    margin-bottom: var(--razmak-veliki);
+}
+
+.filter-btn {
+    padding: var(--razmak-mali) var(--razmak-srednji);
+    border: 2px solid var(--boja-primarna);
+    background-color: white;
+    color: var(--boja-primarna);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--boja-primarna);
+    color: white;
+}
+
+.kartice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--razmak-srednji);
+}
+
+.kartica {
+    background-color: white;
+    padding: var(--razmak-srednji);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.kartica h3 {
+    color: var(--boja-primarna);
+    margin-bottom: var(--razmak-mali);
+}
+
+.kartica p {
+    margin-bottom: var(--razmak-mali);
+}
+
+.oznaka {
+    background-color: var(--boja-primarna);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--razmak-srednji);
+}
+
+.info-kartica {
+    background-color: white;
+    padding: var(--razmak-veliki);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-kartica h3 {
+    color: var(--boja-primarna);
+    margin-bottom: var(--razmak-srednji);
+    font-size: 1.2rem;
+}
+
+.info-kartica p {
+    margin-bottom: var(--razmak-mali);
+}
+.kontakt-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--razmak-veliki);
+}
+
+.kontakt-info {
+    background-color: white;
+    padding: var(--razmak-veliki);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.kontakt-info h3 {
+    color: var(--boja-primarna);
+    margin-bottom: var(--razmak-srednji);
+}
+
+.kontakt-info p {
+    margin-bottom: var(--razmak-srednji);
+}
+
+.kontakt-forma {
+    background-color: white;
+    padding: var(--razmak-veliki);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.forma-grupa {
+    margin-bottom: var(--razmak-srednji);
+}
+
+.forma-grupa label {
+    display: block;
+    margin-bottom: var(--razmak-mali);
+    font-weight: bold;
+    color: var(--boja-tekst);
+}
+
+.forma-grupa input,
+.forma-grupa textarea {
+    width: 100%;
+    padding: var(--razmak-mali);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: var(--boja-primarna);
+    color: white;
+    padding: var(--razmak-mali) var(--razmak-veliki);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--boja-sekundarna);
+}

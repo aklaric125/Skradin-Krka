@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte nas za više informacija o Skradinu i NP Krka">
+    <meta property="og:title" content="Kontakt - Skradin i NP Krka">
+    <meta property="og:description" content="Pošaljite nam upit ili se prijavite na newsletter">
+    <meta property="og:type" content="website">
+    <title>Kontakt - Skradin i NP Krka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Skradin i NP Krka</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="atrakcije.html">Atrakcije</a></li>
+                <li><a href="prakticne-info.html">Praktične info</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Kontakt</h2>
+
+        <div class="kontakt-wrapper">
+            <div class="kontakt-info">
+                <h3>Informacije</h3>
+                <p>📍 Skradin, Hrvatska</p>
+                <p>📞 +385 22 771 688</p>
+                <p>✉️ info@npkrka.hr</p>
+                <p>🌐 www.npkrka.hr</p>
+            </div>
+
+            <form class="kontakt-forma" id="kontakt-forma">
+                <div class="forma-grupa">
+                    <label for="ime">Ime i prezime *</label>
+                    <input type="text" id="ime" name="ime" required placeholder="Vaše ime">
+                </div>
+
+                <div class="forma-grupa">
+                    <label for="email">Email adresa *</label>
+                    <input type="email" id="email" name="email" required placeholder="vas@email.com">
+                </div>
+
+                <div class="forma-grupa">
+                    <label for="poruka">Poruka *</label>
+                    <textarea id="poruka" name="poruka" required placeholder="Vaša poruka..." rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Pošalji poruku</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Skradin i NP Krka</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

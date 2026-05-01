@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atrakcije Skradina i Nacionalnog parka Krka">
+    <meta property="og:title" content="Atrakcije - Skradin i NP Krka">
+    <meta property="og:description" content="Otkrijte najbolje atrakcije Skradina i NP Krka">
+    <meta property="og:type" content="website">
+    <title>Atrakcije - Skradin i NP Krka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Skradin i NP Krka</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="atrakcije.html" class="active">Atrakcije</a></li>
+                <li><a href="prakticne-info.html">Praktične info</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Atrakcije</h2>
+
+        <div class="filter-gumbi">
+            <button class="filter-btn active" data-filter="sve">Sve</button>
+            <button class="filter-btn" data-filter="priroda">Priroda</button>
+            <button class="filter-btn" data-filter="kultura">Kultura</button>
+            <button class="filter-btn" data-filter="aktivnosti">Aktivnosti</button>
+        </div>
+
+        <div class="kartice-grid">
+            <div class="kartica" data-kategorija="priroda">
+                <h3>Skradinski buk</h3>
+                <p>Najpoznatiji slap u Hrvatskoj, visok 17 metara i širok 200 metara.</p>
+                <span class="oznaka">Priroda</span>
+            </div>
+            <div class="kartica" data-kategorija="priroda">
+                <h3>Roški slap</h3>
+                <p>Drugi veliki slap na rijeci Krki, okružen netaknutom prirodom.</p>
+                <span class="oznaka">Priroda</span>
+            </div>
+            <div class="kartica" data-kategorija="kultura">
+                <h3>Otok Visovac</h3>
+                <p>Mali otok s franjevačkim samostanom iz 15. stoljeća.</p>
+                <span class="oznaka">Kultura</span>
+            </div>
+            <div class="kartica" data-kategorija="kultura">
+                <h3>Tvrđava Šubićevac</h3>
+                <p>Povijesna tvrđava iznad Skradina s pogledom na cijelu dolinu Krke.</p>
+                <span class="oznaka">Kultura</span>
+            </div>
+            <div class="kartica" data-kategorija="aktivnosti">
+                <h3>Kajak na Krki</h3>
+                <p>Uživajte u vožnji kajakom duž mirnih voda rijeke Krke.</p>
+                <span class="oznaka">Aktivnosti</span>
+            </div>
+            <div class="kartica" data-kategorija="aktivnosti">
+                <h3>Pješačke staze</h3>
+                <p>Brojne označene staze kroz park za sve razine kondicije.</p>
+                <span class="oznaka">Aktivnosti</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Skradin i NP Krka</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
