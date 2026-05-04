@@ -59,18 +59,17 @@ h2 {
 }
 
 .hero {
-    background-color: var(--boja-primarna);
-    color: white;
-    padding: var(--razmak-veliki);
     border-radius: 8px;
     margin-bottom: var(--razmak-veliki);
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .hero h2 {
     font-size: 2rem;
     margin-bottom: var(--razmak-srednji);
-    color: white;
+    color: var(--boja-primarna);
 }
 
 .uvod {
@@ -230,6 +229,30 @@ footer {
     background-color: var(--boja-sekundarna);
 }
 
+.hero-slika {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: var(--razmak-srednji);
+}
+
+.uvod-slika {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: var(--razmak-srednji);
+}
+
+.kartica-slika {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: var(--razmak-mali);
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -253,6 +276,5 @@ footer {
 
     .kontakt-wrapper {
         grid-template-columns: 1fr;
-    }
     }
 }
